@@ -1,7 +1,7 @@
 {
 	"nombre" : "GameSearch",
 	"descripcion" : "",
-	"url": "",
+	"url": "http://api.gamesearch.com",
 	"precio": "free",
 
 	"endpoints": 
