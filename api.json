@@ -1,0 +1,14 @@
+{
+	"nombre" : "GameSearch",
+	"descripcion" : "",
+	"url": "",
+	"precio": "free",
+
+	"endpoints": 
+	[
+		{
+			"url": "/list/games",
+			"count": 10
+		}
+	]
+}
