@@ -60,9 +60,7 @@ def token_required(f):
             data = jwt.decode(
                 token, app.config['SECRET_KEY'], algorithms=["HS256"])
 
-            current_user = user_login.query
-                .filter_by(public_id=data['public_id'])\
-                .first()
+            current_user = user_login.query.filter_by(public_id=data['public_id']).first()
         except:
             return jsonify({
                 'message': 'Token is invalid !!'
@@ -219,8 +217,6 @@ def get_games():
         output.append(game_data)
     # devuelve la lista de juegos en formato JSON
     return jsonify({'games': output})
-
-
 if __name__ == "__main__":
 
     app.run(debug=True,host='0.0.0.0',port=5001)
